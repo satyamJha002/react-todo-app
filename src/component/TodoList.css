@@ -1,0 +1,86 @@
+.todo-list {
+  background-color: azure;
+  padding: 4rem;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.todo-list .title {
+  text-align: center;
+  margin-top: -2rem;
+  padding: 1rem;
+}
+
+.todo-list .input-btn {
+  display: flex;
+  padding: 1rem;
+}
+
+.todo-list .input-btn input[type="text"] {
+  padding: 1rem 2rem;
+  border: none;
+  background: gainsboro;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.todo-list .input-btn input[type="text"]:focus {
+  outline: none;
+}
+
+.todo-list .input-btn button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-list .input-btn button:hover {
+  background-color: teal;
+  color: white;
+}
+
+.todo-item {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item .list-items {
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.todo-item .delete-btn,
+.complete-btn {
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+}
+
+.todo-item .delete-btn:hover,
+.complete-btn:hover {
+  background-color: teal;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .todo-list {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  .todo-list .input-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .todo-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
